@@ -1,0 +1,116 @@
+2025-12-06 18:51:11,327 - INFO - Available GPUs: 1
+2025-12-06 18:51:11,327 - INFO - The current settings are as follows:
+2025-12-06 18:51:11,327 - INFO - exp_name: 251206_185111_test_single_mask
+2025-12-06 18:51:11,327 - INFO - logdir: dev_logs/
+2025-12-06 18:51:11,327 - INFO - dev: True
+2025-12-06 18:51:11,327 - INFO - enable_amp: True
+2025-12-06 18:51:11,327 - INFO - num_prompt_points: 20
+2025-12-06 18:51:11,327 - INFO - num_object_points: 10
+2025-12-06 18:51:11,327 - INFO - num_object_chunk: 16
+2025-12-06 18:51:11,327 - INFO - num_merge: 1
+2025-12-06 18:51:11,327 - INFO - overfit: False
+2025-12-06 18:51:11,327 - INFO - save_ckpt_freq: 1
+2025-12-06 18:51:11,327 - INFO - use_pdnorm: True
+2025-12-06 18:51:11,327 - INFO - use_random_clicks: False
+2025-12-06 18:51:11,327 - INFO - mask_threshold: 0.5
+2025-12-06 18:51:11,327 - INFO - use_aux_loss: False
+2025-12-06 18:51:11,327 - INFO - use_localized_loss: False
+2025-12-06 18:51:11,327 - INFO - iterative: True
+2025-12-06 18:51:11,327 - INFO - use_var_grid: False
+2025-12-06 18:51:11,327 - INFO - val_only: True
+2025-12-06 18:51:11,327 - INFO - compute_ap: False
+2025-12-06 18:51:11,327 - INFO - return_class_wise: False
+2025-12-06 18:51:11,328 - INFO - use_centroid: True
+2025-12-06 18:51:11,328 - INFO - run_openvocab_eval: False
+2025-12-06 18:51:11,328 - INFO - compute_PQ: False
+2025-12-06 18:51:11,328 - INFO - PQ_refer_labels: False
+2025-12-06 18:51:11,328 - INFO - compute_NOC: True
+2025-12-06 18:51:11,328 - INFO - exclude_wall_floor: False
+2025-12-06 18:51:11,328 - INFO - get_confusion: False
+2025-12-06 18:51:11,328 - INFO - checkpoint_dir: dev_checkpoints/
+2025-12-06 18:51:11,328 - INFO - stage: ['scannet20']
+2025-12-06 18:51:11,328 - INFO - val_dataset: ['']
+2025-12-06 18:51:11,328 - INFO - lr: 0.0001
+2025-12-06 18:51:11,328 - INFO - batch_size: 1
+2025-12-06 18:51:11,328 - INFO - num_workers: 8
+2025-12-06 18:51:11,328 - INFO - weight_decay: 0.005
+2025-12-06 18:51:11,328 - INFO - val_freq: 10
+2025-12-06 18:51:11,328 - INFO - epochs: 500
+2025-12-06 18:51:11,328 - INFO - resume: checkpoints/SNAP_C.pth
+2025-12-06 18:51:11,328 - INFO - distributed: True
+2025-12-06 18:51:11,328 - INFO - save_output: False
+2025-12-06 18:51:11,328 - INFO - local_rank: 0
+2025-12-06 18:51:13,324 - INFO - Number of trainable params: 49397965
+2025-12-06 18:51:13,337 - INFO - Number of training samples in scannet20: 1201
+2025-12-06 18:51:13,337 - INFO - Number of validation samples in scannet20: 312
+2025-12-06 18:51:13,337 - INFO - Total training samples: 1201
+2025-12-06 18:51:13,337 - INFO - Total validation samples: 312
+2025-12-06 18:51:13,338 - INFO - Starting validation now
+2025-12-06 19:01:51,399 - INFO - NoC@0.5: 1.694826254826255 over 6475 samples
+2025-12-06 19:01:51,399 - INFO - NoC@0.65: 2.3305019305019306 over 6475 samples
+2025-12-06 19:01:51,399 - INFO - NoC@0.8: 3.842162162162162 over 6475 samples
+2025-12-06 19:01:51,399 - INFO - NoC@0.85: 4.7405405405405405 over 6475 samples
+2025-12-06 19:01:51,399 - INFO - NoC@0.9: 6.06996138996139 over 6475 samples
+2025-12-06 19:01:51,399 - INFO - Metrics for Click 1
+2025-12-06 19:01:51,399 - INFO - After epoch 1: For dataset ScanNet, Text Accuracy = 0.7138223938223939 || Sum: 4622.0 Count: 6475
+2025-12-06 19:01:51,399 - INFO - After epoch 1: For dataset ScanNet, IoU = 0.6775004028261399 || Sum: 4386.815108299255 Count: 6475
+2025-12-06 19:01:51,399 - INFO - After epoch 1: For dataset ScanNet, Acc_25 = 0.8633204633204633 || Sum: 5590.0 Count: 6475
+2025-12-06 19:01:51,399 - INFO - After epoch 1: For dataset ScanNet, Acc_50 = 0.7583011583011583 || Sum: 4910.0 Count: 6475
+2025-12-06 19:01:51,399 - INFO - After epoch 1: mIoU = 0.0 || Category Count: 1
+2025-12-06 19:01:51,399 - INFO - Metrics for Click 2
+2025-12-06 19:01:51,399 - INFO - After epoch 1: For dataset ScanNet, Text Accuracy = 0.7515057915057916 || Sum: 4866.0 Count: 6475
+2025-12-06 19:01:51,399 - INFO - After epoch 1: For dataset ScanNet, IoU = 0.7468023849546219 || Sum: 4835.545442581177 Count: 6475
+2025-12-06 19:01:51,399 - INFO - After epoch 1: For dataset ScanNet, Acc_25 = 0.9439382239382239 || Sum: 6112.0 Count: 6475
+2025-12-06 19:01:51,399 - INFO - After epoch 1: For dataset ScanNet, Acc_50 = 0.8418532818532819 || Sum: 5451.0 Count: 6475
+2025-12-06 19:01:51,399 - INFO - After epoch 1: mIoU = 0.0 || Category Count: 1
+2025-12-06 19:01:51,399 - INFO - Metrics for Click 3
+2025-12-06 19:01:51,399 - INFO - After epoch 1: For dataset ScanNet, Text Accuracy = 0.7688030888030888 || Sum: 4978.0 Count: 6475
+2025-12-06 19:01:51,399 - INFO - After epoch 1: For dataset ScanNet, IoU = 0.7858928466119361 || Sum: 5088.656181812286 Count: 6475
+2025-12-06 19:01:51,399 - INFO - After epoch 1: For dataset ScanNet, Acc_25 = 0.9701930501930502 || Sum: 6282.0 Count: 6475
+2025-12-06 19:01:51,399 - INFO - After epoch 1: For dataset ScanNet, Acc_50 = 0.8954440154440154 || Sum: 5798.0 Count: 6475
+2025-12-06 19:01:51,400 - INFO - After epoch 1: mIoU = 0.0 || Category Count: 1
+2025-12-06 19:01:51,400 - INFO - Metrics for Click 4
+2025-12-06 19:01:51,400 - INFO - After epoch 1: For dataset ScanNet, Text Accuracy = 0.7803861003861003 || Sum: 5053.0 Count: 6475
+2025-12-06 19:01:51,400 - INFO - After epoch 1: For dataset ScanNet, IoU = 0.8069377922735619 || Sum: 5224.9222049713135 Count: 6475
+2025-12-06 19:01:51,400 - INFO - After epoch 1: For dataset ScanNet, Acc_25 = 0.9785328185328185 || Sum: 6336.0 Count: 6475
+2025-12-06 19:01:51,400 - INFO - After epoch 1: For dataset ScanNet, Acc_50 = 0.9215444015444015 || Sum: 5967.0 Count: 6475
+2025-12-06 19:01:51,400 - INFO - After epoch 1: mIoU = 0.0 || Category Count: 1
+2025-12-06 19:01:51,400 - INFO - Metrics for Click 5
+2025-12-06 19:01:51,400 - INFO - After epoch 1: For dataset ScanNet, Text Accuracy = 0.7780694980694981 || Sum: 5038.0 Count: 6475
+2025-12-06 19:01:51,400 - INFO - After epoch 1: For dataset ScanNet, IoU = 0.8222712998408609 || Sum: 5324.206666469574 Count: 6475
+2025-12-06 19:01:51,400 - INFO - After epoch 1: For dataset ScanNet, Acc_25 = 0.9847104247104247 || Sum: 6376.0 Count: 6475
+2025-12-06 19:01:51,400 - INFO - After epoch 1: For dataset ScanNet, Acc_50 = 0.9348262548262548 || Sum: 6053.0 Count: 6475
+2025-12-06 19:01:51,400 - INFO - After epoch 1: mIoU = 0.0 || Category Count: 1
+2025-12-06 19:01:51,400 - INFO - Metrics for Click 6
+2025-12-06 19:01:51,400 - INFO - After epoch 1: For dataset ScanNet, Text Accuracy = 0.778996138996139 || Sum: 5044.0 Count: 6475
+2025-12-06 19:01:51,400 - INFO - After epoch 1: For dataset ScanNet, IoU = 0.8330309420847064 || Sum: 5393.875349998474 Count: 6475
+2025-12-06 19:01:51,400 - INFO - After epoch 1: For dataset ScanNet, Acc_25 = 0.9868725868725868 || Sum: 6390.0 Count: 6475
+2025-12-06 19:01:51,400 - INFO - After epoch 1: For dataset ScanNet, Acc_50 = 0.9459459459459459 || Sum: 6125.0 Count: 6475
+2025-12-06 19:01:51,400 - INFO - After epoch 1: mIoU = 0.0 || Category Count: 1
+2025-12-06 19:01:51,400 - INFO - Metrics for Click 7
+2025-12-06 19:01:51,400 - INFO - After epoch 1: For dataset ScanNet, Text Accuracy = 0.7828571428571428 || Sum: 5069.0 Count: 6475
+2025-12-06 19:01:51,400 - INFO - After epoch 1: For dataset ScanNet, IoU = 0.8407130579414515 || Sum: 5443.617050170898 Count: 6475
+2025-12-06 19:01:51,401 - INFO - After epoch 1: For dataset ScanNet, Acc_25 = 0.9901158301158302 || Sum: 6411.0 Count: 6475
+2025-12-06 19:01:51,401 - INFO - After epoch 1: For dataset ScanNet, Acc_50 = 0.9545945945945946 || Sum: 6181.0 Count: 6475
+2025-12-06 19:01:51,401 - INFO - After epoch 1: mIoU = 0.0 || Category Count: 1
+2025-12-06 19:01:51,401 - INFO - Metrics for Click 8
+2025-12-06 19:01:51,401 - INFO - After epoch 1: For dataset ScanNet, Text Accuracy = 0.7842471042471042 || Sum: 5078.0 Count: 6475
+2025-12-06 19:01:51,401 - INFO - After epoch 1: For dataset ScanNet, IoU = 0.8461945358482567 || Sum: 5479.109619617462 Count: 6475
+2025-12-06 19:01:51,401 - INFO - After epoch 1: For dataset ScanNet, Acc_25 = 0.9902702702702703 || Sum: 6412.0 Count: 6475
+2025-12-06 19:01:51,401 - INFO - After epoch 1: For dataset ScanNet, Acc_50 = 0.9598455598455599 || Sum: 6215.0 Count: 6475
+2025-12-06 19:01:51,401 - INFO - After epoch 1: mIoU = 0.0 || Category Count: 1
+2025-12-06 19:01:51,401 - INFO - Metrics for Click 9
+2025-12-06 19:01:51,401 - INFO - After epoch 1: For dataset ScanNet, Text Accuracy = 0.7845559845559845 || Sum: 5080.0 Count: 6475
+2025-12-06 19:01:51,401 - INFO - After epoch 1: For dataset ScanNet, IoU = 0.8505270524927088 || Sum: 5507.162664890289 Count: 6475
+2025-12-06 19:01:51,401 - INFO - After epoch 1: For dataset ScanNet, Acc_25 = 0.9921235521235521 || Sum: 6424.0 Count: 6475
+2025-12-06 19:01:51,401 - INFO - After epoch 1: For dataset ScanNet, Acc_50 = 0.9624710424710424 || Sum: 6232.0 Count: 6475
+2025-12-06 19:01:51,401 - INFO - After epoch 1: mIoU = 0.0 || Category Count: 1
+2025-12-06 19:01:51,401 - INFO - Metrics for Click 10
+2025-12-06 19:01:51,401 - INFO - After epoch 1: For dataset ScanNet, Text Accuracy = 0.7833204633204633 || Sum: 5072.0 Count: 6475
+2025-12-06 19:01:51,401 - INFO - After epoch 1: For dataset ScanNet, IoU = 0.8542852954790859 || Sum: 5531.497288227081 Count: 6475
+2025-12-06 19:01:51,401 - INFO - After epoch 1: For dataset ScanNet, Acc_25 = 0.9927413127413127 || Sum: 6428.0 Count: 6475
+2025-12-06 19:01:51,401 - INFO - After epoch 1: For dataset ScanNet, Acc_50 = 0.9652509652509652 || Sum: 6250.0 Count: 6475
+2025-12-06 19:01:51,401 - INFO - After epoch 1: mIoU = 0.0 || Category Count: 1
+2025-12-06 19:01:51,401 - INFO - Validation epoch 1 completed in 10m38s
+2025-12-06 19:01:51,401 - INFO - Validation ended
+
