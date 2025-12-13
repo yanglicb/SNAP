@@ -92,7 +92,7 @@ class PointCloudData:
         return data
 
 class SegmentationModel:
-    def __init__(self, checkpoint_path=None, domain="Outdoor", grid_size=0.05):
+    def __init__(self, checkpoint_path=None, domain="Outdoor", grid_size=None):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.domain = domain
 
@@ -125,7 +125,7 @@ class SegmentationModel:
         for k, v in checkpoint['model'].items():
             state_dict[k] = v
 
-        self.model.load_state_dict(state_dict)
+        self.model.load_state_dict(state_dict, strict=False)
     
     def intialize_pointcloud(self, point_cloud_data):
         coord = point_cloud_data['coord']

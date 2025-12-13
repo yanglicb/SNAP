@@ -57,13 +57,14 @@ conda activate Lidar_Seg
 conda install pytorch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 pytorch-cuda=12.4 -c pytorch -c nvidia
 python -m pip install flash-attn --no-build-isolation
 conda install h5py pyyaml -c anaconda -y
-conda install sharedarray tensorboard tensorboardx yapf addict einops scipy plyfile termcolor timm -c conda-forge -y
+conda install tensorboard tensorboardx addict einops scipy plyfile timm hdbscan -c conda-forge -y
 conda install pytorch-cluster pytorch-scatter -c pyg -y
 python -m pip install spconv-cu120
 python -m pip install torch-geometric python-dateutil nuscenes-devkit
 conda install pandas
 python -m pip install git+https://github.com/openai/CLIP.git
 python -m pip install pyvista open3d
+python -m pip install PyQt6 pyvistaqt
 ```
 
 ## Interactive Demo

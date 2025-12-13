@@ -6,14 +6,15 @@ import pdb
 from .transforms import Compose
 
 class DemoDatset():
-    def __init__(self, domain="Outdoor"):
+    def __init__(self, domain="Outdoor", grid_size=None):
         
-        if domain=="Outdoor":
-            grid_size = 0.05
-        elif domain=="Indoor":
-            grid_size = 0.02
-        elif domain=="Aerial":
-            grid_size = 0.33
+        if grid_size is None:
+            if domain=="Outdoor":
+                grid_size = 0.05
+            elif domain=="Indoor":
+                grid_size = 0.02
+            elif domain=="Aerial":
+                grid_size = 0.33
 
         if domain=="Outdoor":
             transforms_list_1 = [
